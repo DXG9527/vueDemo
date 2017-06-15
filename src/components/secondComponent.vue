@@ -40,8 +40,8 @@
 <style>
     #secondComponent {
         width: 1200px;
-        height: 500px;
-        padding: 10px 70px ;
+        height: 300px;
+        padding: 70px 70px ;
     }
     .el-carousel__item h3 {
         color: #475669;
