@@ -1,14 +1,11 @@
 <template>
   <div id="app">
-    <ul>
-      <li><router-link to="/first">跳转第一页</router-link></li>
-      <li><router-link to="/second">跳转第二页</router-link></li>
-    </ul>
-    <router-view class="view"></router-view>
+    <headerComponent></headerComponent>
   </div>
 </template>
 
 <script>
+  import headerComponent from './components/headerComponent.vue';
   import firstComponent from './components/firstComponent.vue';
   import secondComponent from './components/secondComponent.vue';
   export default {
@@ -18,7 +15,7 @@
       msg: 'Welcome to Your Vue.js App'
     }
   },
-  components: {firstComponent, secondComponent}
+  components: {headerComponent,firstComponent, secondComponent}
 }
 </script>
 
@@ -27,9 +24,9 @@
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /*text-align: center;*/
   color: #2c3e50;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
 
 h1, h2 {
