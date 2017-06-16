@@ -2,8 +2,8 @@
     <div id="headerComponent">
         <div class="header">
             <ul>
-                <li><router-link to="/first">第一页</router-link></li>
-                <li><router-link to="/second">第二页</router-link></li>
+                <li><router-link to="/first">首页</router-link></li>
+                <li><router-link to="/second">发展历程</router-link></li>
                 <router-view class="view"></router-view>
             </ul>
         </div>
@@ -35,7 +35,7 @@
         width: 1400px;
     }
     .header {
-        background-color: #324157;
+        background-color: #20a0ff;
         width: 1400px;
         height: 40px;
     }
@@ -44,6 +44,10 @@
         padding-top: 8px;
     }
     .header ul li a {
+        display: block;
+        padding: 0 20px;
+        opacity: .8;
+        color: #fff;
         text-decoration: none;
     }
     .el-menu {
