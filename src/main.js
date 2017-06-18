@@ -4,6 +4,7 @@ import VueRouter from "vue-router"
 import VueResource from 'vue-resource'
 import { Carousel, CarouselItem } from 'element-ui'
 import secondComponent from './components/secondComponent.vue'
+import firstComponent from './components/firstComponent.vue'
 
 //开启debug模式
 Vue.config.debug = true;
@@ -14,7 +15,7 @@ Vue.use(Carousel);
 Vue.use(CarouselItem);
 
 // 定义组件, 也可以像教程之前教的方法从别的文件引入
-const First = { template: '<div><h2>我是第 1 个子页面</h2></div>' };
+// const First = { template: '<div><h2>我是第 1 个子页面</h2></div>' };
 
 // 创建一个路由器实例
 // 并且配置路由规则
@@ -24,7 +25,7 @@ const router = new VueRouter({
     routes: [
         {
             path: '/first',
-            component: First
+            component: firstComponent
         },
         {
             path: '/second',
