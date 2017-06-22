@@ -8,6 +8,7 @@
   import headerComponent from './components/headerComponent.vue';
   import firstComponent from './components/firstComponent.vue';
   import secondComponent from './components/secondComponent.vue';
+  import loginComponent from './components/loginComponent.vue';
   export default {
   name: 'app',
   data () {
@@ -15,7 +16,7 @@
       msg: 'Welcome to Your Vue.js App'
     }
   },
-  components: {headerComponent,firstComponent, secondComponent}
+  components: {headerComponent,firstComponent, secondComponent, loginComponent}
 }
 </script>
 

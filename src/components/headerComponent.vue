@@ -4,6 +4,7 @@
             <ul>
                 <li><router-link to="/first">首页</router-link></li>
                 <li><router-link to="/second">发展历程</router-link></li>
+                <li><router-link to="/login">登录/注册</router-link></li>
                 <router-view class="view"></router-view>
             </ul>
         </div>

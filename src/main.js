@@ -5,6 +5,7 @@ import VueResource from 'vue-resource'
 import { Carousel, CarouselItem } from 'element-ui'
 import secondComponent from './components/secondComponent.vue'
 import firstComponent from './components/firstComponent.vue'
+import loginComponent from './components/loginComponent.vue'
 
 //开启debug模式
 Vue.config.debug = true;
@@ -30,7 +31,11 @@ const router = new VueRouter({
         {
             path: '/second',
             component: secondComponent
-        }
+        },
+        {
+            path: '/login',
+            component: loginComponent
+        },
     ]
 });
 
